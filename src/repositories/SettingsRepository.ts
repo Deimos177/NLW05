@@ -1,8 +1,8 @@
 import { EntityRepository, Repository } from "typeorm";
-import { setting } from "../entities/Setting";
+import { Setting } from "../entities/Setting";
 
-@EntityRepository(setting)
-class SettingsRepository extends Repository<setting> {
+@EntityRepository(Setting)
+class SettingsRepository extends Repository<Setting> {
   
 }
 

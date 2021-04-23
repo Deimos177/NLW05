@@ -8,7 +8,7 @@ import { Column,
 import { v4 as uuid } from "uuid"
 
 @Entity("settings")
-class setting {
+class Setting {
 
   @PrimaryColumn()
   id: string
@@ -32,5 +32,5 @@ class setting {
   }
 }
 
-export { setting }
+export { Setting }
 
