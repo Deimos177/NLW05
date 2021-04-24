@@ -18,6 +18,10 @@ class UsersService{
       return userExists
     }
 
+    if(email.length == 0){
+      throw new Error("Email must be filled")
+    }
+
     const user = this.usersRepository.create({ 
       email 
     })
